@@ -195,7 +195,7 @@ p {
 }
 
 #Home {
-	background-image: url(./img/IMG_0421.jpg);
+	background-image: url(https://images.unsplash.com/photo-1674108015366-95f4dbf94d4c?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzY0ODA3OTk&ixlib=rb-4.0.3&q=80);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -291,7 +291,7 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
+	color: Green;
 }
 #Bio .Bio-info h1 {
 	font-size: 4rem;
@@ -305,6 +305,9 @@ p {
 #Bio .Bio-info p {
 	color: white;
 }
+#Bio {
+  background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+}
 
 #Experience .Experience {
 	flex-direction: column-reverse;
@@ -313,12 +316,15 @@ p {
 	margin: 0 auto;
 	padding: 100px 20px;
 }
+
+
 #Experience .col-left {
 	width: 250px;
 	height: 360px;
 }
 #Experience .col-right {
 	width: 100%;
+  	color: Green;
 }
 #Experience .col-right h2 {
 	font-size: 1.8rem;
@@ -328,13 +334,36 @@ p {
 }
 #Experience .col-right p {
 	margin-bottom: 20px;
+  	color: white;
 }
 #Experience .col-right .cta {
-	color: black;
+	color: white;
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
+
+#Experience  {
+  background-image: url(https://images.unsplash.com/photo-1674227638236-8e838644d470?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzY0ODExOTk&ixlib=rb-4.0.3&q=80);
+  background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+#Portfolio {
+	background-image: url(https://images.unsplash.com/photo-1562957982-b1f25317aebd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzY0ODIxMjg&ixlib=rb-4.0.3&q=80);
+background-size: contain;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+#Portfolio .all-Portfolio {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
 #footer {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
@@ -401,7 +430,31 @@ p {
 	#Home h1 {
 		font-size: 7rem;
 	}
-
+  
+#Bio .Bio-bottom .Bio-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+  
+ #Experience .Experience-item {
+		flex-direction: row;
+	}
+	#Experience .Experience-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#Experience .Experience-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#Experience .all-Experience .Experience-info {
+		height: 100%;
+	}
+	#Experience .all-Experience .Experience-img {
+		height: 100%;
+	}
+  
 @media only screen and (min-width: 1200px) {
 	#header .hamburger {
 		display: none;
